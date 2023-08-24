@@ -44,7 +44,7 @@ def predict(data):
                       columns=list(data.keys()))
 
     metal = model_met.predict(df)
-    df["metal"] = metal
+    df["metal"] = metal[0]
 
     # metal descriptors
     df['Total molecular weight (metal)'] = mg.Composition(metal[0][0]).weight

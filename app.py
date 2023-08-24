@@ -1,14 +1,11 @@
 import base64
 
-import pandas as pd
 import streamlit
 from streamlit_option_menu import option_menu
-import pymatgen.core as mg
-
 from components.page_team_contact import contact_action, team_action
-from components.page_information import project_action
 from components.page_mof_information import mof_inf_action
 from components.predict import predict
+
 
 streamlit.set_page_config(
     layout="wide",
@@ -128,6 +125,4 @@ def run():
 
 
 if __name__ == '__main__':
-    # by default it will run at 8501 port
-    # streamlit run app.py
     run()
