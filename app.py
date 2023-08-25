@@ -113,7 +113,8 @@ def run():
 
     if selected == "О нас":
         team_image = "images/team.jpg"
-        team_action(team_image)
+        achievments_image = "images/achievments.jpg"
+        team_action(team_image,achievments_image)
     if selected == "𝐀𝐈 синтез MOFs":
         predict_action()
     if selected == "MOFs описание":

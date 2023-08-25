@@ -13,12 +13,19 @@ def contact_action():
     streamlit.markdown(text, unsafe_allow_html=True)
 
 
-def team_action(team_image):
+def team_action(team_image,achievments_image):
     streamlit.title("Лаборатория сорбционных процессов ИФХЭ РАН")
-    text = "### <div class='div_text'>" \
+    text1 = "### <div class='div_text'>" \
            "Команда высококвалифицированных и " \
            "опытных специалистов — лидеров отрасли" \
-           " в области адсорбционных технологий в России и СНГ<br><br> " \
-           "</div>"
-    streamlit.markdown(text, unsafe_allow_html=True)
+           " в области адсорбционных технологий в России и СНГ<br><br> </div>"
+    streamlit.markdown(text1, unsafe_allow_html=True)
     streamlit.image(team_image, width=800)
+    streamlit.title("Научно-технические разработки")
+    text2 = "### <div class='div_text'>" \
+           "Помимо проведения исследований центр «Адсорбционные Технологии» " \
+            "обладает потенциалом для создания образцов абсолютно " \
+            "новых продуктов для различных сфер применения, включая все " \
+            "этапы жизненного цикла изделия<br><br> </div>"
+    streamlit.markdown(text2, unsafe_allow_html=True)
+    streamlit.image(achievments_image, width=800)
